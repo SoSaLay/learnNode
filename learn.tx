@@ -1,0 +1,43 @@
+In fs.readFileSync, you don't need to 
+define parameters for error and data because 
+it is a synchronous operation. This means it either
+ successfully returns the file data or throws 
+ an error that you can catch using a try-catch block. In contrast, 
+ fs.readFile is asynchronous and uses a callback function to 
+ handle the result, requiring you to define parameters for error 
+and data to manage these outcomes within the callback.
+
+Asynchronous functions, like fs.readFile, are often preferred over 
+synchronous ones in Node.js because they do not block the event loop. 
+This means that while the file is being read, other operations can continue,
+ improving the performance and responsiveness of the application, 
+ especially in a server environment where handling multiple concurrent 
+ requests efficiently is crucial. In contrast, synchronous functions 
+ block execution until they complete, which can slow down the 
+ application and negatively impact user experience 
+when handling large files or performing time-consuming operations.
+
+
+Synchronous functions are useful in scripts or startup tasks 
+where blocking operations are acceptable and won't impact
+performance, such as reading configuration files during 
+initialization or simple command-line tools 
+where execution order is critical and concurrency is not a concern.
+
+
+ This integer employID is then used to search an array of employee objects to find a matching employee 
+ by their employID. 
+  The request does not return an array of employee IDs; instead, it takes the 
+  employID from the URL, converts it to a number, 
+  and uses it to find the corresponding employee object in the array. 
+  This process allows the server to retrieve specific employee details based on the provided ID in the URL.
+
+
+ searches through an array named employ to find an 
+ employee object where the employID property matches the 
+ employID value obtained from the URL. The find method
+  returns the first employee object
+  that meets this condition and stores it in the employee variable.
+
+
+

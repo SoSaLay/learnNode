@@ -1,0 +1,13 @@
+[
+{"employeID":1, "name":"Sulayman", "salary":50000, "department":"developement"},
+{"employeID":2, "name":"Mike", "salary":150000, "department":"logistics"},
+{"employeID":3, "name":"Tim", "salary":250000, "department":"marketing"},
+{"employeID":4, "name":"Red", "salary":60000, "department":"HR"},
+{"employeID":5, "name":"Jane", "salary":1576000, "department":"CEO"},
+{"employeID":6, "name":"France", "salary":34000, "department":"intern"},
+{"employeID":7, "name":"June", "salary":70000, "department":"clean"},
+{"employeID":8, "name":"Saint", "salary":650000, "department":"network"},
+{"employeID":9, "name":"Michelle", "salary":950000, "department":"security"},
+{"employeID":10, "name":"Rico", "salary":450000, "department":"management"}
+
+]
